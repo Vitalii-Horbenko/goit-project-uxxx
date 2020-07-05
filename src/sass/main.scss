@@ -1,0 +1,371 @@
+@import "normalize.scss";
+@import "base.scss";
+@import "fonts.scss";
+
+/////-------Виталик, удали этот блок "top"------//////
+
+.top {
+    min-width: 320px;
+    height: 550px;
+    background-color: #000;
+}
+
+.why-we {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    margin: 0 auto;
+    position: relative;
+    top: -320px;
+    margin: 0 20px;
+}
+.why-we__title {
+    color: #fff;
+    width: 120px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Montserrat-Bold", sans-serif;
+    background: transparent;
+}
+.why-we__list__item {
+    list-style: none;
+    width: 100%;
+}
+.why-we__list {
+    background: #fff;
+    padding: 0 25px;
+
+    box-shadow: 0px 20px 0px 0px #fbfbfb;
+}
+.why-we__list__item__h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Montserrat-Bold", sans-serif;
+    color: #ff8939;
+}
+.why-we__list__item__h3::before {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    background: #ff6b08;
+    min-width: 20px;
+    margin: 7px 6px 5px 0;
+}
+.why-we__list__item__advantages {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 16px;
+    font-family: "Montserrat-Bold", sans-serif;
+}
+
+.teacher__h3 {
+    font-weight: bold;
+    font-size: 21px;
+    font-family: "Montserrat-Bold", sans-serif;
+}
+.teacher__png {
+    width: 280px;
+    height: 210px;
+}
+.teacher__name {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Montserrat-Bold", sans-serif;
+}
+.teacher__list {
+    margin: 0;
+    padding: 0;
+}
+.teacher__list::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    background: #ff6b08;
+    width: 25px;
+    margin: 7px 6px 5px 20px;
+}
+
+.teacher__name::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    background: #d1d1d1;
+    min-width: 280px;
+    margin: 7px 6px 5px 0;
+}
+.teacher__list__item__span {
+    margin-left: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Montserrat-Bold", sans-serif;
+    padding-left: 20px;
+}
+
+.teacher__list__item {
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+}
+.teacher__list__item::before {
+    content: "";
+    background-image: url("../images/noun_Check_2422424.svg");
+    width: 22px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 22px;
+    display: inline-block;
+    background-size: cover;
+}
+.teacher__list__description {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #858585;
+}
+.teacher__list__item__description {
+    margin-bottom: 20px;
+}
+.teacher__link {
+    color: #ff7518;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    height: 250px;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 320px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.footer__call {
+    display: flex;
+    width: 230px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.phone {
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer__tel {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Montserrat-Bold", sans-serif;
+    color: #000;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.footer__logo {
+    width: 77px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+.footer-bottom {
+    display: flex;
+    min-width: 320px;
+    padding: 23px;
+    background-color: #111517;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: "Montserrat-Regular", sans-serif;
+    color: #747778;
+    height: 70px;
+    justify-content: center;
+    font-weight: medium;
+}
+
+.footer-bottom::before {
+    content: "\00A9";
+    display: inline-block;
+    margin-right: 3px;
+    height: 1px;
+    justify-content: center;
+}
+@media (min-width: 766px) {
+    .top {
+        height: 550px;
+    }
+    .why-we__list__item__advantages {
+        font-size: 17px;
+    }
+    .why-we__title {
+        text-align: center;
+        font-size: 26px;
+        width: 100%;
+    }
+    .why-we__list__item {
+        max-width: 300px;
+        margin: 0 20px;
+        padding: 5px;
+        margin-top: 5.5px;
+    }
+
+    .why-we__list {
+        padding: 0 10px 0 30px;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+    .teacher {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .teacher__png {
+        width: 246px;
+        height: 320px;
+        display: block;
+    }
+    .teacher__title {
+        width: 20%;
+    }
+    .teacher__name-list {
+        width: 50%;
+        margin-top: 45px;
+    }
+    .teacher {
+    }
+    .teacher__list {
+        margin-left: 15px;
+    }
+    .teacher__name {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .teacher__h3 {
+        font-size: 24px;
+    }
+    .teacher__name-list {
+        margin-left: 60px;
+    }
+    .footer {
+        height: 190px;
+        width: 100%;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 120px;
+    }
+    .footer__call {
+        padding: 30px;
+        padding-top: 50px;
+        width: 260px;
+        font-size: 20px;
+    }
+    .footer__logo {
+        margin: 0 auto;
+        margin-top: 42px;
+        order: -1;
+    }
+    .icon {
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-right: 25%;
+        justify-content: start;
+        align-items: flex-start;
+        text-align: start;
+        margin-left: -5%;
+    }
+    .footer__tel::after {
+        content: "";
+        border-left: 1px solid #e0e0e0;
+        margin-left: 30px;
+    }
+    .footer-bottom {
+        width: 100%;
+        padding-left: 8%;
+        justify-content: start;
+    }
+}
+@media (min-width: 1278px) {
+    .why-we__list__item {
+        max-width: 320px;
+        margin: 0 20px;
+    }
+    .why-we__list {
+        height: 300px;
+        width: 1400px;
+        margin: 0 auto;
+    }
+    .why-we__title {
+        font-size: 42px;
+    }
+    .why-we__list__item__advantages {
+        font-size: 20px;
+    }
+    .teacher {
+        justify-content: center;
+    }
+
+    .footer__tel::after {
+        content: "";
+        border-left: 1px solid #e0e0e0;
+        margin-left: 50px;
+    }
+    .footer-bottom {
+        padding-left: 12%;
+    }
+}
+@media (min-width: 1438px) {
+    .why-we__list__item {
+        max-width: 320px;
+        margin: 0 20px;
+    }
+    .why-we__list {
+        height: 350px;
+        width: 1400px;
+        flex-grow: 1;
+        margin: 0 auto;
+    }
+    .why-we__title {
+        font-size: 58px;
+    }
+    .why-we__list__item__advantages {
+        font-size: 23px;
+    }
+    .footer__tel::after {
+        content: "";
+        border-left: 1px solid #e0e0e0;
+        margin-left: 70px;
+    }
+    .footer-bottom {
+        padding-left: 13%;
+    }
+}
