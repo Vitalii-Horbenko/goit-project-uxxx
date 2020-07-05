@@ -1,0 +1,108 @@
+
+   .teacher {
+    position:relative;
+    padding-top:17.5rem;
+    padding-bottom:3.125rem;
+    width:100%;
+    padding: 0 20px;
+    margin:0 auto;
+    font-family: "Montserrat",sans-serif ;
+   }
+   .sections-title {
+   font-weight:800;
+   font-size: 20px;
+   margin: 0 auto; 
+   margin-bottom: 23px;
+
+   }
+   .photo-wrap {
+    display:flex;
+    margin-bottom: 27px;
+    
+   }
+   .teacher__photo {
+    border-style:none;
+    display:block;
+    max-width:100%;
+    height:auto;
+    box-shadow:2px 3px 11px 0 rgba(0,0,0,.21);
+   }
+
+   .teacher__name {
+    font-weight:800;
+    border-bottom:.063rem solid hsla(0,0%,52.2%,.38);
+    line-height:1.823rem;
+    font-size:16px;
+    padding-bottom: 10px;
+   }
+   .skill-list {
+    padding:0;
+    margin-bottom: 27px;
+   }
+   .skill-list:first-child {
+    letter-spacing:.438rem;
+   }
+   .skill-list__item {
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:start;
+    align-items:flex-start;
+   }
+   .skill-list__item:not(:last-child) {
+    margin-bottom: 24px;
+   }
+   .skill-list__description {
+    padding-left:1.25rem;
+    font-size:.813rem;
+    color:#111517;
+    font-weight:600;
+    line-height:1.25rem;
+    margin:0;
+   }
+   .skill-list__img {
+    width:1.125rem;
+    height:1.125rem;
+    fill:#ff6b08;
+    -webkit-transition:.2s;
+    transition:.2s;
+   }
+   .description-wrapper {
+    position:relative;
+    padding-top:1.125rem;
+    color :#858585;
+   }
+   .description-wrapper::before {
+    content: "";
+    width: 1.563rem;
+    height: .125rem;
+    position: absolute;
+    background-color: #ff6b08;
+    top: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+   .teacher-description {
+    margin-bottom: 24px;
+   }
+   .teacher__link {
+    all:unset;
+    text-decoration:underline;
+    cursor:pointer;
+    color:#ff6b08;
+   }
+   .teacher-description,
+   .teacher__link {
+    font-size:.688rem;
+    line-height:1.25rem;
+   }
+   @media (min-width:768px){
+      .teacher-wrapper{
+         display:flex;
+      }
+      .teacher__name {
+         margin: 0 auto;
+         padding-top: 0;
+         padding-bottom: 17px;
+        }
+   }
+   
